@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/visaasteramerica" />
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textColorHint="@color/design_default_color_on_secondary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/payBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <EditText
+        android:id="@+id/etInputcardNum"
+        android:layout_width="258dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="@string/card_Number"
+        android:inputType="textPersonName"
+        android:text="@string/card_box"
+        android:textColorHint="@color/design_default_color_on_secondary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/etInputDate"
+        android:layout_width="161dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="@string/expiryDate"
+        android:inputType="textPersonName"
+        android:text="@string/expiryDateBox"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textColorHint="@color/design_default_color_on_secondary"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/etInputCvv"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etInputcardNum"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <EditText
+        android:id="@+id/etInputCvv"
+        android:layout_width="142dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:hint="@string/cvv"
+        android:inputType="textPersonName"
+        android:text="@string/cvvBox"
+        android:textColorHint="@color/design_default_color_on_secondary"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.552" />
+
+    <Button
+        android:id="@+id/payBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#008000"
+        android:text="@string/PAY"
+        android:textColor="@color/design_default_color_background"
+        android:textColorHighlight="@android:color/holo_green_light"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.874" />
+
+    <EditText
+        android:id="@+id/etInputCardHolderName"
+        android:layout_width="262dp"
+        android:layout_height="106dp"
+        android:ems="10"
+        android:hint="@string/CardHolder"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etInputcardNum"
+        app:layout_constraintVertical_bias="0.482" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
